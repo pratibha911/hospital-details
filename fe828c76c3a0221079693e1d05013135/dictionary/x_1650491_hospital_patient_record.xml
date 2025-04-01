@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e8c40c3ec3a0221079693e1d05013130" label="patient_record" max_length="40" name="x_1650491_hospital_patient_record" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Created By" max_length="32" name="u_created_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Data of expiry" max_length="40" name="data_of_expiry" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="update By" max_length="32" name="u_update_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="State" max_length="40" name="state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Inprogress" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="new" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="complete" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Closed By" max_length="32" name="closed_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Patient details" max_length="40" name="patient_details" type="string"/>
+        <index name="index">
+            <element name="closed_by"/>
+        </index>
+        <index name="index2">
+            <element name="u_created_by"/>
+        </index>
+        <index name="index3">
+            <element name="u_update_by"/>
+        </index>
+    </element>
+</database>

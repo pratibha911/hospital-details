@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_1650491_hospital.Notification</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>Notification</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-01 11:00:35</sys_created_on>
+        <sys_id>c0684687c360a21079693e1d05013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1650491_hospital.Notification</sys_name>
+        <sys_package display_value="Hospital Management " source="x_1650491_hospital">fe828c76c3a0221079693e1d05013135</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management ">fe828c76c3a0221079693e1d05013135</sys_scope>
+        <sys_update_name>sysevent_register_c0684687c360a21079693e1d05013138</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-01 11:00:35</sys_updated_on>
+        <table>x_1650491_hospital_patient_record</table>
+    </sysevent_register>
+</record_update>
